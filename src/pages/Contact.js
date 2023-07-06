@@ -68,6 +68,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.758664843128!2d3.4022878729333215!3d6.4300266338224015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52dc0328169%3A0x7885a1a33689a576!2sVictoria%20Island%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1688684258525!5m2!1sen!2sng"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
   );
 };

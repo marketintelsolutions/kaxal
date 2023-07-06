@@ -42,7 +42,7 @@
   }
 
   & .section-two {
-    padding: 90px 30px 30px;
+    padding: 90px 30px 90px;
     background: var(--light-green);
 
     & .section-center {
@@ -166,5 +166,9 @@
         }
       }
     }
+  }
+
+  & .map {
+    height: 90vh;
   }
 }
