@@ -1,0 +1,109 @@
+.about {
+  & .section-one {
+    //   border: 2px solid red;
+    min-height: 319px;
+    background: var(--primary-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .section-center {
+      max-width: var(--max-width);
+      // border: 2px solid blue;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      & h2 {
+        font-size: 42px;
+        color: white;
+        text-transform: capitalize;
+      }
+
+      & .link {
+        display: flex;
+        gap: 5px;
+
+        & a,
+        p,
+        span {
+          font-size: 13px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  & .section-two {
+    // border: 2px solid red;
+    background: rgb(247, 244, 241);
+    padding: 90px 30px 50px;
+
+    & .content {
+      //   border: 2px solid blue;
+      margin: 0 auto;
+      max-width: var(--max-width);
+      display: flex;
+      gap: 50px;
+
+      & .left {
+        max-width: 530px;
+        max-height: 435px;
+
+        & img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      & .right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h2 {
+          color: rgba(234, 179, 23, 0.98);
+          font-size: 13px;
+        }
+
+        & h1 {
+          font-size: 50px;
+          color: #9c6a37;
+          text-transform: capitalize;
+        }
+
+        & h3 {
+          color: rgb(132, 109, 83);
+          font-size: 19px;
+        }
+
+        & p {
+          font-size: 17px;
+          color: rgb(168, 152, 137);
+        }
+
+        & button {
+          border: none;
+          width: fit-content;
+          border-radius: 8px;
+          color: #9c6a37;
+          -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+          background-color: #f4e9d7;
+          padding: 20px 60px;
+          font-size: 14.3px;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

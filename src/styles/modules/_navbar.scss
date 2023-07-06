@@ -13,22 +13,25 @@
     & .nav-links {
       display: flex;
       gap: 67px;
-      color: #046604;
-      font-size: 16px;
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 24px;
-      cursor: pointer;
-    }
 
-    & .active {
-      color: #fc6702;
-      font-size: 16px;
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 24px;
+      & .link-item {
+        color: #046604;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      & .active {
+        color: #fc6702;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
     }
   }
 }
