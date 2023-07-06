@@ -43,7 +43,9 @@
 
   & .section-two {
     // border: 2px solid red;
-    background: rgb(247, 244, 241);
+    // background: rgb(247, 244, 241);
+
+    background: var(--light-green);
     padding: 90px 30px 50px;
 
     & .content {
@@ -71,6 +73,7 @@
         & h2 {
           color: rgba(234, 179, 23, 0.98);
           font-size: 13px;
+          text-transform: uppercase;
         }
 
         & h1 {
