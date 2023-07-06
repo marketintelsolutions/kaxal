@@ -20,11 +20,13 @@
         }
       }
 
+      & .info-container {
+        padding: 35px;
+      }
       & .info {
         // border: 2px solid red;
         max-width: 478px;
         margin: 0 auto;
-        padding: 35px 0;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -56,7 +58,8 @@
           width: fit-content;
           padding: 10px 20px;
           border: none;
-          color: #fc6702;
+          //   color: #fc6702;
+          color: black;
           text-align: center;
           font-size: 14px;
           font-family: Inter;

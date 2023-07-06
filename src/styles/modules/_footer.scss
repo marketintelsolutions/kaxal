@@ -1,0 +1,124 @@
+.footer {
+  //   border: 2px solid red;
+  background-repeat: no-repeat;
+
+  & .footer-center {
+    padding: 55px 0;
+    display: flex;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    // border: 2px solid blue;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .left {
+      display: flex;
+      flex-direction: column;
+      //   border: 2px solid salmon;
+      gap: 25px;
+
+      & p {
+        max-width: 300px;
+        color: #000;
+        text-align: justify;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+      }
+
+      & .socials {
+        display: flex;
+        gap: 25px;
+
+        & img {
+          border-radius: 5px;
+          background: #046604;
+          padding: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    & .middle,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      & h2 {
+        color: #000;
+        text-align: justify;
+        font-size: 24px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: capitalize;
+      }
+
+      & .link-item {
+        color: #000;
+        text-align: justify;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+    & .right {
+      & p {
+        color: #000;
+        text-align: justify;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      & .info {
+        max-width: 340px;
+      }
+
+      & input {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #046604;
+        font-size: 16px;
+        border: none;
+        color: white;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.46);
+          text-align: justify;
+          font-size: 16px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+        }
+      }
+
+      & button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #046604;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
