@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ img, heading, text, background }) => {
+const Card = ({ img, heading, text, background, url }) => {
   return (
     <div className="landing-card">
       <div className="image">
@@ -13,7 +14,7 @@ const Card = ({ img, heading, text, background }) => {
         <div className="info">
           <h2>{heading}</h2>
           <p>{text}</p>
-          <button>click here</button>
+          <a href={url} target='_blank'>click here</a>
         </div>
       </div>
     </div>
