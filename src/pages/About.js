@@ -8,7 +8,7 @@ const About = () => {
         <div className="section-center">
           <h2>about kaxal</h2>
           <div className="link">
-            <Link to="/">home </Link>
+            <Link to="/">home</Link>
             <p> {" > about us"}</p>
           </div>
         </div>
