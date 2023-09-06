@@ -1,11 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-const Card = ({ img, heading, text, background, url }) => {
+const Card = ({ img, heading, text, background, url, overlay }) => {
+  const [isOverlay, setIsOverlay] = useState(false)
+
   return (
     <div className="landing-card">
-      <div className="image">
-        <img src={img} alt={heading} />
+      <div className={isOverlay ? "image overlay" : "image"}
+        onMouseOver={() => setIsOverlay(true)}
+        onMouseLeave={() => setIsOverlay(false)}
+      >
+        <div className="img-overlay">
+          <img src={overlay} alt="overlay" />
+        </div>
+        <img src={img} alt={heading} className='main-img' />
       </div>
       <div
         className="info-container"
