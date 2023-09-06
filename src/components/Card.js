@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Card = ({ img, heading, text, background, url, overlay }) => {
+const Card = ({ img, heading, text, background, url, overlay, overlayBg }) => {
   const [isOverlay, setIsOverlay] = useState(false)
 
   return (
@@ -9,7 +9,7 @@ const Card = ({ img, heading, text, background, url, overlay }) => {
         onMouseOver={() => setIsOverlay(true)}
         onMouseLeave={() => setIsOverlay(false)}
       >
-        <div className="img-overlay">
+        <div className="img-overlay" style={{ background: `${overlayBg}` }}>
           <img src={overlay} alt="overlay" />
         </div>
         <img src={img} alt={heading} className='main-img' />

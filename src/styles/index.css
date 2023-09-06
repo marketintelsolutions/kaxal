@@ -17,5 +17,5 @@ body {
   --primary-orange: #fc6702;
   --primary-green: #9acb34;
   --light-green: #0466040d;
-  --transition: all 0.2s linear;
+  --transition: all linear 0.2s;
 }

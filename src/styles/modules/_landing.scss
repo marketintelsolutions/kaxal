@@ -14,12 +14,11 @@
         max-width: 610px;
         max-height: 405px;
         position: relative;
-        transition: var(--transition);
 
         & .img-overlay {
           opacity: 0;
           position: absolute;
-          background: rgba(252, 103, 2, 0.50);
+          // background: rgba(252, 103, 2, 0.50);
           top: 0;
           left:0;
           z-index: 3;
@@ -29,7 +28,13 @@
           align-items: center;
           padding-left: 67px;
           // justify-content: center;
+        transition: var(--transition);
+
+        & img{
+          transform: translateX(40px);
+        transition: var(--transition);
         }
+      }
 
         & .main-img {
           height: 100%;
@@ -39,10 +44,16 @@
       }
 
       & .overlay{
-        transition: var(--transition);
+
         & .img-overlay{
           opacity: 1;
-        }
+        transition: var(--transition);
+
+        & img{
+          transform: translateX(0);
+        transition: var(--transition);
+      }
+      }
       }
 
       & .info-container {
