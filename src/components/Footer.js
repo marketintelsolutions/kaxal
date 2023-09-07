@@ -5,6 +5,7 @@ import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import youtube from "../assets/images/youtube.svg";
 import footerBg from "../assets/images/footerBg.svg";
+import { BiLogoLinkedin } from 'react-icons/bi'
 
 const Footer = () => {
   return (
@@ -20,10 +21,12 @@ const Footer = () => {
             across a variety of consumer categories.
           </p>
           <div className="socials">
-            <img src={instagram} alt="instagram" />
-            <img src={facebook} alt="facebook" />
-            <img src={twitter} alt="twitter" />
-            <img src={youtube} alt="youtube" />
+            <a href="" target='_blank'><img src={instagram} alt="instagram" /></a>
+            <a href="https://web.facebook.com/people/KaxalAfrica/100087465067889" target='_blank'><img src={facebook} alt="facebook" /></a>
+            <a href="" target='_blank'><img src={twitter} alt="twitter" /></a>
+            {/* <a href="" target='_blank'><img src={youtube} alt="youtube" /></a> */}
+            <a href="https://www.linkedin.com/company/kaxalafrica" target='_blank'><BiLogoLinkedin /></a>
+
           </div>
         </div>
         <div className="middle">

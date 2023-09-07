@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="left">
             <h2>- contacts -</h2>
             <h1>Get in Touch</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <h3>We continuously seek to partner with competent practitioners</h3>
             <div className="items">
               <div className="item">
                 <span>
@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="text">
                   <h2>we are here</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Plot 8A, Elsie Femi-Pearse, Off Adeola Odeku, Victoria Island
                   </p>
                 </div>
               </div>
@@ -40,11 +40,11 @@ const Contact = () => {
                 <div className="text">
                   <h2>contacts</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    contact@kaxalafrica.com <br /> +2348078095798
                   </p>
                 </div>
               </div>
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <CiClock2 />
                 </span>
@@ -54,7 +54,7 @@ const Contact = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="right">
