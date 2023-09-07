@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { teamData, values } from "../utils/data";
+import close from "../assets/logos/close.svg";
+import { limitStringTo50Characters } from "../utils/helpers/arrangeText";
 
 const About = () => {
+  const [content, setContent] = useState({});
+  const [isContent, setIsContent] = useState(false);
+
+  const handleClick = (e) => {
+    console.log(e.target.classList.contains("details"));
+    if (e.target.classList.contains("details")) setIsContent(false);
+  };
+
   return (
     <section className="about">
       <div className="section-one">
@@ -66,12 +76,27 @@ const About = () => {
                   <h2>{name}</h2>
                   <div className="line"></div>
                   <h3>{role}</h3>
-                  <p>{text[0]} ...<span>Read More</span></p>
+                  <p>{limitStringTo50Characters(text[0])} ...<span onClick={() => {
+                    setIsContent(true);
+                    setContent(item);
+                  }}>Read More</span></p>
                 </div>
               })
             }
           </div>
         </div>
+        {isContent && (
+          <div className="details" onClick={(e) => handleClick(e)}>
+            <div className="center">
+              <div className="close" onClick={() => setIsContent(false)}>
+                <img src={close} alt="close" />
+              </div>
+              <h4>{content.name}</h4>
+              <p>{content.text}</p>
+              {/* <p>hello</p> */}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
