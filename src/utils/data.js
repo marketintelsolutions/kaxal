@@ -9,6 +9,7 @@ import topeAdewuya from '../assets/images/topeAdewuya.png'
 import mission from '../assets/images/mission.png'
 import vision from '../assets/images/vision.png'
 import tagline from '../assets/images/tagline.png'
+import core from '../assets/images/core.png'
 
 
 export const landingCards = [
@@ -75,5 +76,11 @@ export const values = [
     heading: 'Tagline',
     text: '“… beyond limits”',
     img: tagline
+  },
+  {
+    heading: 'Core Values',
+    text: 'S P I R I T',
+    img: core,
+    items: ['S	- Service with Passion', 'P	- Professionalism', 'I	- Integrity', 'R	- Respect for Individual', 'I	- Innovation', 'T	- Team Spirit']
   },
 ]

@@ -38,11 +38,16 @@ const About = () => {
         <div className="values">
           {
             values.map((value, index) => {
-              const { heading, text, img } = value
+              const { heading, text, img, items } = value
               return <div className="value-item" key={index}>
                 <img src={img} alt={heading} />
                 <h2>{heading}</h2>
                 <p>{text}</p>
+                {heading === 'Core Values' && <div className="items">
+                  {
+                    items.map((item, index) => <p key={index}>{item}</p>)
+                  }
+                </div>}
               </div>
             })
           }

@@ -151,6 +151,14 @@
           font-size: 17px;
           letter-spacing: 1px;
         }
+
+        & .items{
+
+          & p{
+            word-spacing: 5px;
+            font-size: 15px;
+          }
+        }
       }
     }
   }
