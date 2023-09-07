@@ -165,10 +165,19 @@
             border: none;
             // color: #9c6a37;
             color: white;
-          background: var(--primary-green);
+            background: var(--primary-green);
           // background: #d7c2aa;
             border-radius: 7px;
             cursor: pointer;
+            border: 1px solid var(--primary-green);
+            transition: var(--transition);
+
+            &:hover{
+              transition: var(--transition);
+              background: white;
+              color: var(--primary-green);
+              border: 1px solid var(--primary-green);
+            }
           }
         }
       }
