@@ -66,7 +66,7 @@ const About = () => {
                   <h2>{name}</h2>
                   <div className="line"></div>
                   <h3>{role}</h3>
-                  <p>{text[0]}</p>
+                  <p>{text[0]} ...<span>Read More</span></p>
                 </div>
               })
             }
