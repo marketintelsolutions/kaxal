@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { teamData } from "../utils/data";
 
 const About = () => {
   return (
@@ -25,16 +26,33 @@ const About = () => {
             <h2>- ABOUT US -</h2>
             <h1>about the company</h1>
             <h3>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-              cumque.
+              Kaxal Africa Limited is a member of the Pan African Capital Holdings Group. Kaxal Africa is a parent company to two sub – companies as follows:
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              veritatis minus deserunt odit repellat! <br />
-              <br /> Reprehenderit amet ullam est laboriosam hic ex, vero sit
-              earum neque nemo expedita id distinctio sint.
+              Webzen Agro Allied Services Limited – which provides investment and business support services to agribusinesses and <br />
+              <br /> Hawaree Africa Limited – which is focused on providing consumer goods distribution/ e-commerce services.
             </p>
-            <button>products</button>
+            <Link to='/services' >services</Link>
+          </div>
+        </div>
+      </div>
+      <div className="section-three">
+        <div className="center">
+          <p className="desc">- Team -</p>
+          <h1>Meet our Team</h1>
+          <div className="team">
+            {
+              teamData.map((item) => {
+                const { img, text, name, role } = item
+                return <div className="team-item">
+                  <img src={img} alt="img" />
+                  <h2>{name}</h2>
+                  <div className="line"></div>
+                  <h3>{role}</h3>
+                  <p>{text[0]}</p>
+                </div>
+              })
+            }
           </div>
         </div>
       </div>
