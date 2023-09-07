@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { teamData } from "../utils/data";
+import { teamData, values } from "../utils/data";
 
 const About = () => {
   return (
@@ -35,6 +35,18 @@ const About = () => {
             <Link to='/services' >services</Link>
           </div>
         </div>
+        <div className="values">
+          {
+            values.map((value, index) => {
+              const { heading, text, img } = value
+              return <div className="value-item" key={index}>
+                <img src={img} alt={heading} />
+                <h2>{heading}</h2>
+                <p>{text}</p>
+              </div>
+            })
+          }
+        </div>
       </div>
       <div className="section-three">
         <div className="center">
@@ -42,9 +54,9 @@ const About = () => {
           <h1>Meet our Team</h1>
           <div className="team">
             {
-              teamData.map((item) => {
+              teamData.map((item, index) => {
                 const { img, text, name, role } = item
-                return <div className="team-item">
+                return <div className="team-item" key={index}>
                   <img src={img} alt="img" />
                   <h2>{name}</h2>
                   <div className="line"></div>

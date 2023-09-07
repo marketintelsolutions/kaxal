@@ -6,6 +6,9 @@ import chrisOshiafi from '../assets/images/chrisOshiafi.png'
 import sinaAlimi from '../assets/images/sinaAlimi.png'
 import ericOkoruwa from '../assets/images/ericOkoruwa.png'
 import topeAdewuya from '../assets/images/topeAdewuya.png'
+import mission from '../assets/images/mission.png'
+import vision from '../assets/images/vision.png'
+import tagline from '../assets/images/tagline.png'
 
 
 export const landingCards = [
@@ -53,5 +56,24 @@ export const teamData = [
     role: 'General Manager',
     name: 'Tope Adewuya',
     text: [' Tope joined Webzen Agro Allied Services Limited in 2020. Prior to this he worked as Investment Manager with GroFin which is a pioneering development financier specialized in financing and supporting small and growing businesses (SGBs) across Africa and the Middle East. ', ' He holds a Master’s degree in Business Administration (Finance specialization); an Associate of the Chartered Institute of Bankers of Nigeria (CIBN) and a graduate of Agricultural Economics. ', ' With over 12 years working experience in the provision of credit to SMEs; Tope specialized on agribusiness and manufacturing sector deals where he has been able to provide diligent business support to young and growing food manufacturing and agrobusinesses. These industries (manufacturing & agribusiness) supports a lot of lives at the bottom of the pyramid thereby promoting the actualization of the SDGs.']
+  },
+]
+
+
+export const values = [
+  {
+    heading: 'Our Vision',
+    text: 'To make sustainable investments, across the African continent, in the agribusiness and consumer goods distribution sectors.',
+    img: mission
+  },
+  {
+    heading: 'Our Mission',
+    text: 'Leveraging market knowledge and technology to drive value for our stakeholders.',
+    img: vision
+  },
+  {
+    heading: 'Tagline',
+    text: '“… beyond limits”',
+    img: tagline
   },
 ]
