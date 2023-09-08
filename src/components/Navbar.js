@@ -1,8 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { paths } from "../utils/data";
 
 const Navbar = () => {
+  const [currentPath, setCurrentPath] = useState('/')
+
+  const location = useLocation()
+
+
+
+  useEffect(() => {
+    setCurrentPath(location.pathname)
+  }, [location])
+
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -10,17 +21,15 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="nav-links">
-          <Link to="/" className="link-item active">
-            Home
-          </Link>
-          <Link to="/about" className="link-item">
-            About Us
-          </Link>
-          <div className="link-item">Services</div>
-          <div className="link-item">News</div>
-          <Link to="/contact" className="link-item">
-            Contact
-          </Link>
+          {
+            paths.map((pathItem) => {
+              const { text, path } = pathItem
+
+              return <Link to={path} className={`${currentPath === path ? "link-item active" : 'link-item'}`}>
+                {text}
+              </Link>
+            })
+          }
         </div>
       </div>
     </nav>

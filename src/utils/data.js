@@ -84,3 +84,26 @@ export const values = [
     items: ['S	- Service with Passion', 'P	- Professionalism', 'I	- Integrity', 'R	- Respect for Individual', 'I	- Innovation', 'T	- Team Spirit']
   },
 ]
+
+export const paths = [
+  {
+    text: 'home',
+    path: '/'
+  },
+  {
+    text: 'about',
+    path: '/about'
+  },
+  {
+    text: 'services',
+    path: '/services'
+  },
+  {
+    text: 'news',
+    path: '/news'
+  },
+  {
+    text: 'contact',
+    path: '/contact'
+  },
+]

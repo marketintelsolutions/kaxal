@@ -1,8 +1,9 @@
 .footer {
   //   border: 2px solid red;
+  // background: var(--light-green);
   background-repeat: no-repeat;
   background-size: cover;
-    background: var(--light-green);
+  padding: 50px 0;
 
 
   & .footer-center {
@@ -20,6 +21,10 @@
       flex-direction: column;
       //   border: 2px solid salmon;
       gap: 25px;
+
+      // & .logo{
+      //   // width: fit-content;
+      // }
 
       & p {
         max-width: 300px;
@@ -107,7 +112,7 @@
         color: var(--primary-green);
 
         &::placeholder {
-        color: var(--primary-green);
+        color: var(--light-green);
         // color: rgba(255, 255, 255, 0.46);
           text-align: justify;
           font-size: 16px;

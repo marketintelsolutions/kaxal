@@ -8,6 +8,8 @@ const About = () => {
   const [content, setContent] = useState({});
   const [isContent, setIsContent] = useState(false);
 
+  console.log(window.location.pathname)
+
   const handleClick = (e) => {
     console.log(e.target.classList.contains("details"));
     if (e.target.classList.contains("details")) setIsContent(false);

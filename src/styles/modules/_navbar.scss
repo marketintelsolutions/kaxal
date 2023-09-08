@@ -1,6 +1,13 @@
 .navbar {
   // border: 2px solid red;
-  padding: 15px 0;
+  padding: 35px 0;
+  box-shadow: 0 2px 5px 9px rgba(199, 200, 197, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: white;
 
   & .nav-center {
     // border: 2px solid blue;
@@ -15,6 +22,7 @@
       gap: 67px;
 
       & .link-item {
+        text-transform: capitalize;
         color: #046604;
         font-size: 16px;
         font-family: Inter;
