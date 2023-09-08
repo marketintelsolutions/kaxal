@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Service from '../components/Service'
 import { hawareeServices, webzenServices } from '../utils/data/services'
 
 const Services = () => {
@@ -27,12 +28,7 @@ const Services = () => {
                             {
                                 webzenServices.map((service, index) => {
 
-                                    const { img, text } = service
-
-                                    return <div className="zen-item" key={index}>
-                                        <img src={img} alt={img} />
-                                        <p className="text">{text}</p>
-                                    </div>
+                                    return <Service {...service} key={index} />
                                 })
                             }
 
@@ -46,12 +42,7 @@ const Services = () => {
                             {
                                 hawareeServices.map((service, index) => {
 
-                                    const { img, text } = service
-
-                                    return <div className="zen-item" key={index}>
-                                        <img src={img} alt={img} />
-                                        <p className="text">{text}</p>
-                                    </div>
+                                    return <Service {...service} key={index} />
                                 })
                             }
 

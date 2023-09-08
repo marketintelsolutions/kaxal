@@ -83,6 +83,11 @@
         line-height: 24px;
         text-transform: uppercase;
         cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+          opacity: 0.8;
+        }
       }
     }
 
@@ -126,8 +131,9 @@
       & button {
         padding: 10px 20px;
         border-radius: 5px;
-        background: #046604;
-        color: #fff;
+        background: var(--primary-orange);
+          border: 1px solid var(--primary-orange);
+          color: #fff;
         text-align: center;
         font-size: 16px;
         font-family: Inter;
@@ -135,15 +141,14 @@
         font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
-        border: none;
         cursor: pointer;
         transition: var(--transition);
 
         &:hover{
           transition: var(--transition);
           background: white;
-          color: var(--primary-green);
-          border: 1px solid var(--primary-green);
+          color: var(--primary-orange);
+          border: 1px solid var(--primary-orange);
         }
       }
     }

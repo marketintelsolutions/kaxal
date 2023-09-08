@@ -107,6 +107,12 @@
           line-height: 22px;
           text-transform: capitalize;
           cursor: pointer;
+          transition: var(--transition);
+
+          &:hover{
+            opacity: 0.9;
+            transition: var(--transition);
+          }
         }
       }
     }

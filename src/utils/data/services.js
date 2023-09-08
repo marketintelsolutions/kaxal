@@ -10,18 +10,22 @@ import others from '../../assets/images/others.png'
 export const webzenServices = [
     {
         img: financial,
+        head: 'Financial Investment',
         text: 'Webzen invests in young and growing businesses with strong market potentials. A proven market, competent management and clear exit routes key conditions for our investment.'
     },
     {
         img: agriBusiness,
+        head: 'Agribusiness Project Development',
         text: 'We continuously seek to partner with competent agribusiness practitioners, organizations   and agencies towards creating and managing profitable agricultural projects within and outside Nigeria.'
     },
     {
         img: business,
+        head: 'Business Advisory',
         text: 'Leveraging on the pool of experience available with the company and the group, we are well positioned to provide qualitative business advisory and business support services to agribusinesses, food processing and related businesses towards ensuring business survival and growth.'
     },
     {
         img: products,
+        head: 'Products Distribution',
         text: 'As part of Business Support to our investee and partner firms, we actively engage in the distribution of agricultural and food products across Nigeria leveraging on existing and constantly expanding distribution chain. We presently have a ‘Healthy Basket’ of food items being promoted across our distribution channels.'
     },
 ]

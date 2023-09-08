@@ -31,7 +31,14 @@
         line-height: 24px;
         cursor: pointer;
         text-decoration: none;
+        transition: var(--transition);
+
+        &:hover{
+          opacity: 0.8;
+          transition: var(--transition);
+        }
       }
+
       & .active {
         color: #fc6702;
         font-size: 16px;

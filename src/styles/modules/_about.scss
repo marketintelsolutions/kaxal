@@ -68,7 +68,7 @@
           color:white;
           -webkit-box-shadow: 0 0 0 0 transparent;
           box-shadow: 0 0 0 0 transparent;
-          background-color: var(--primary-green);
+          background-color: var(--primary-orange);
           // background-color: var(--light-orange);
           padding: 20px 60px;
           font-size: 14.3px;
@@ -76,12 +76,13 @@
           cursor: pointer;
           font-weight: 700;
           transition: var(--transition);
+          border: 1px solid var(--primary-orange);
 
           &:hover{
             transition: var(--transition);
             background: white;
-            color: var(--primary-green);
-            border: 1px solid var(--primary-green);
+            color: var(--primary-orange);
+            border: 1px solid var(--primary-orange);
           }
         }
       }
@@ -106,9 +107,9 @@
         flex-direction: column;
         gap: 20px;
         border-radius: 6px;
-    border: none;
-    -webkit-box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
-    box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
+        border: none;
+        -webkit-box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
+        box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
 
         & img{
           height: 80px;
@@ -125,7 +126,9 @@
         }
 
         & p{
-          font-size: 17px;
+          font-size: 15px;
+          line-height: 20px;
+          text-align: justify;
           letter-spacing: 1px;
         }
 
@@ -177,7 +180,7 @@
           box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
 
           & img{
-            height: 492px;
+            height: 392px;
             object-fit: cover;
             width: 100%;
             border-radius: 15px;
@@ -310,6 +313,7 @@
           line-height: 28px;
           text-align: center;
           color: #000000;
+          text-align: justify;
   
           @media (max-width: $breakpoint-large) {
             font-size: 12px;
