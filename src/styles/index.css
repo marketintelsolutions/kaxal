@@ -7,19 +7,21 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
-body {
-}
+
 
 :root {
   --max-width: 1235px;
   --primary-orange: #fc6702; /* rgb(252, 103, 2) */
   --primary-green: #006600;
   --secondary-grey: #666666;
-  --light-green: #0466040d;
-  --light-orange: rgba(252, 103, 2,0.25);
-  --transition: all linear 0.2s;
 
+  --light-green: #0466040d;
+  --light-green-200: rgba(154, 203, 52, 0.50);
+  --light-orange: rgba(252, 103, 2,0.25);
+
+  --transition: all linear 0.2s;
   --box-shadow: 0 5px 10px 7px rgba(136,140,133,.05);
 }

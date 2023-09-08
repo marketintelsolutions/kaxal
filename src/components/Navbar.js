@@ -11,7 +11,10 @@ const Navbar = () => {
 
 
   useEffect(() => {
+    window.scroll(0, 0)
+
     setCurrentPath(location.pathname)
+
   }, [location])
 
   return (

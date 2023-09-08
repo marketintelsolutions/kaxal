@@ -40,10 +40,11 @@ const About = () => {
             <h3>
               Kaxal Africa Limited is a member of the Pan African Capital Holdings Group. Kaxal Africa is a parent company to two sub – companies as follows:
             </h3>
-            <p>
-              Webzen Agro Allied Services Limited – which provides investment and business support services to agribusinesses and <br />
-              <br /> Hawaree Africa Limited – which is focused on providing consumer goods distribution/ e-commerce services.
-            </p>
+            <ul>
+              <li>Webzen Agro Allied Services Limited – which provides investment and business support services to agribusinesses and </li>
+              <li>Hawaree Africa Limited – which is focused on providing consumer goods distribution/ e-commerce services.</li>
+            </ul>
+
             <Link to='/services' >services</Link>
           </div>
         </div>
