@@ -15,7 +15,7 @@ body,
 :root {
   --max-width: 1235px;
   --primary-orange: #fc6702; /* rgb(252, 103, 2) */
-  --primary-green: #006600;
+  --primary-green: #006600; /* rgb(0, 102, 0) */
   --secondary-grey: #666666;
 
   --light-green: #0466040d;

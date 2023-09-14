@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Service from '../components/Service'
 import { hawareeServices, webzenServices } from '../utils/data/services'
+import services from '../assets/images/services.png'
 
 const Services = () => {
 
     return (
         <div className='services'>
-            <div className="section-one">
+            <div className="section-one" style={{ backgroundImage: `url(${services})` }}>
                 <div className="section-center">
                     <h2>Services</h2>
                     <div className="link">

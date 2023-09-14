@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import News from "./pages/News";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </SharedLayout>

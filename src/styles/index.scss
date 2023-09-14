@@ -11,14 +11,29 @@
 }
 
 .section-one {
-    //   border: 2px solid red;
+      // border: 2px solid red;
     min-height: 319px;
-    background: var(--primary-green);
+    // background: var(--primary-green);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    background-color: rgba(0, 102, 0,0.4);
+    }
 
     & .section-center {
+      position: relative;
+      z-index: 2;      
       max-width: var(--max-width);
       // border: 2px solid blue;
       margin: 0 auto;

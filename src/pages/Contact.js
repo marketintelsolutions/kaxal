@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CiLocationOn, CiClock2 } from "react-icons/ci";
 import { AiOutlinePhone } from "react-icons/ai";
+import contact from '../assets/images/contact.png'
 
 const Contact = () => {
   return (
     <section className="contact">
-      <div className="section-one">
+      <div className="section-one" style={{ backgroundImage: `url(${contact})` }}>
         <div className="section-center">
           <h2>contacts</h2>
           <div className="link">

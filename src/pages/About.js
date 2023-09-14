@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { teamData, values } from "../utils/data";
 import close from "../assets/logos/close.svg";
 import { limitStringTo50Characters } from "../utils/helpers/arrangeText";
+import aboutus from '../assets/images/aboutus.png'
 
 const About = () => {
   const [content, setContent] = useState({});
@@ -17,7 +18,7 @@ const About = () => {
 
   return (
     <section className="about">
-      <div className="section-one">
+      <div className="section-one" style={{ backgroundImage: `url(${aboutus})` }}>
         <div className="section-center">
           <h2>about kaxal</h2>
           <div className="link">
