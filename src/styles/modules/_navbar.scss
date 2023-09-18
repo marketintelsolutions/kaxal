@@ -9,6 +9,11 @@
   z-index: 999;
   background: white;
 
+  @media (max-width: $breakpoint-tablet) {
+    padding: 20px;
+  }
+  
+
   & .nav-center {
     // border: 2px solid blue;
     max-width: var(--max-width);
@@ -16,10 +21,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.2s linear;
 
     & .nav-links {
       display: flex;
       gap: 67px;
+      transition: all 0.2s linear;
+
+      @media (max-width: $breakpoint-tablet) {
+        // display: block;
+        position: absolute;
+        padding: 0;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        height: 0;
+        transition: all 0.2s linear;
+        box-shadow: var(--box-shadow);
+      }
 
       & .link-item {
         text-transform: capitalize;
@@ -32,6 +53,11 @@
         cursor: pointer;
         text-decoration: none;
         transition: var(--transition);
+
+        @media (max-width: $breakpoint-tablet) {
+          display: none;
+          height: 0;
+        }
 
         &:hover{
           opacity: 0.8;
@@ -47,6 +73,38 @@
         font-weight: 500;
         line-height: 24px;
       }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      & .open{
+        height: auto;
+        transition: all 0.2s linear;
+        transform-origin: top;
+        padding: 20px;
+
+        & .link-item{
+          display: flex;
+          height: auto;
+        }
+      }
+    }
+
+    
+  }
+
+  & .hamburger{
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    & img{
+      height: 30px;
+      width: 30px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      display: block;
     }
   }
 }

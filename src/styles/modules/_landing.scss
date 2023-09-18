@@ -1,12 +1,25 @@
 .landing {
   padding: 100px 0;
 
+  @media (max-width: $breakpoint-large) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 60px 0;
+  }
+
   & .landing-center {
     // border: 2px solid blue;
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     gap: 20px;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      gap: 10px;
+    }
 
     & .landing-card {
 
@@ -15,6 +28,10 @@
         max-width: 610px;
         max-height: 405px;
         position: relative;
+
+        @media (max-width: $breakpoint-tablet) {
+          max-width: 100%;
+        }
 
         & .img-overlay {
           opacity: 0;
@@ -32,6 +49,10 @@
           // justify-content: center;
         transition: var(--transition);
 
+        @media (max-width: $breakpoint-tablet) {
+          height: 100%;
+        }
+
         & img{
           transform: translateX(40px);
         transition: var(--transition);
@@ -47,19 +68,23 @@
 
       & .overlay{
 
-        & .img-overlay{
-          opacity: 1;
-        transition: var(--transition);
+          & .img-overlay{
+            opacity: 1;
+            transition: var(--transition);
 
-        & img{
-          transform: translateX(0);
-        transition: var(--transition);
-      }
-      }
+            & img{
+              transform: translateX(0);
+              transition: var(--transition);
+            }
+          }
       }
 
       & .info-container {
         padding: 35px;
+
+        @media (max-width: $breakpoint-tablet) {
+          padding: 20px;
+        }
       }
       & .info {
         // border: 2px solid red;
@@ -69,6 +94,11 @@
         flex-direction: column;
         gap: 10px;
 
+        @media (max-width: $breakpoint-tablet) {
+          max-width: 100%;
+          gap: 5px;
+        }
+
         & h2 {
           color: #fff;
           font-size: 30px;
@@ -77,6 +107,11 @@
           font-weight: 500;
           line-height: 40px;
           letter-spacing: -0.6px;
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 24px;
+            line-height: 32px;
+          }
         }
 
         & p {
@@ -87,6 +122,11 @@
           font-style: normal;
           font-weight: 500;
           line-height: 24px;
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
 
         & button, a {
@@ -108,6 +148,11 @@
           text-transform: capitalize;
           cursor: pointer;
           transition: var(--transition);
+
+          @media (max-width: $breakpoint-tablet) {
+            padding: 8px 15px;
+            font-size: 12px;
+          }
 
           &:hover{
             opacity: 0.9;
