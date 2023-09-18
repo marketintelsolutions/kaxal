@@ -4,6 +4,10 @@
         // border: 2px solid red;
         padding: 80px 0;
 
+        @media (max-width: $breakpoint-mobile) {
+            padding: 40px 0;
+          }
+
         & .section-center{
             width: 80%;
             max-width: var(--max-width);
@@ -14,6 +18,10 @@
             gap: 50px;
             align-items: center;
             justify-content: center;
+
+            @media (max-width: $breakpoint-tablet) {
+                width: 90%;
+              }
 
             & h3{
                 color: var(--primary-orange);
@@ -27,6 +35,11 @@
                 // text-align: center;
                 color: var(--secondary-grey);
                 // color: red;
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 20px;
+                    text-align: center;
+                  }
             }
 
             & .webzen{
@@ -44,6 +57,11 @@
                     color: #9ACB34;
                     text-transform: capitalize;
                     text-align: center;
+
+                    @media (max-width: $breakpoint-mobile) {
+                        font-size: 40px;
+                        text-align: center;
+                      }
                 }
 
                 & p{
@@ -52,12 +70,22 @@
                     width: 70%;
                     text-align: center;
                     margin: 0 auto;
+
+                    @media (max-width: $breakpoint-tablet) {
+                        width: 85%;
+                        font-size: 17px;
+                      }
                 }
 
                 & .zen-items{
                     display: flex;
                     gap: 30px;
                     margin-top: 40px;
+
+                    @media (max-width: $breakpoint-tablet) {
+                        flex-direction: column;
+                        gap: 20px;
+                      }
 
                     & .zen-item{
                         display: flex;
@@ -78,12 +106,20 @@
                             text-align: center;
                             height: 40px;
                             letter-spacing: 1px;
+
+                            @media (max-width: $breakpoint-mobile) {
+                                font-size: 18px;
+                              }
                         }
     
                         & p{
                             font-size: 15px;
                             text-align: justify;
                             line-height: 25px;
+
+                            @media (max-width: $breakpoint-mobile) {
+                                font-size: 14px;
+                              }
                         }
                     }
 
