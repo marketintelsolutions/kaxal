@@ -20,7 +20,8 @@ export function initFacebookSdk() {
                         if (response.authResponse) {
                             resolve();
                         } else {
-                            reject('User did not authenticate');
+                            // reject('User did not authenticate');
+                            console.log('user did not authenticate');
                         }
                     }, { scope: 'user_posts' });
                 }
