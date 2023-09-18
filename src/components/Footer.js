@@ -7,8 +7,43 @@ import youtube from "../assets/images/youtube.svg";
 import footerBg from "../assets/images/footerBg.svg";
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Footer = () => {
+  const [email, setEmail] = React.useState('');
+
+  const handleSubscription = async () => {
+    try {
+      // const response = await fetch('http://localhost:5000/send-email', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     "Access-Control-Allow-Origin": "*"
+      //   },
+      //   body: JSON.stringify({ email }),
+      // });
+
+      axios.post('http://localhost:8000/send-email', {
+        email,
+      }
+      )
+        .then(() => alert("Message Sent successfully"))
+        .catch((err) => {
+          console.log(err);
+
+          alert("Ooops...failed");
+        })
+
+      // if (response.status === 200) {
+      //   console.log('Email sent successfully');
+      // } else {
+      //   console.log('Error sending email');
+      // }
+    } catch (error) {
+      console.error("There was an error sending the email", error);
+    }
+  };
+
   return (
     <footer className="footer" style={{ backgroundImage: `url(${footerBg})` }}>
       <div className="footer-center">
@@ -40,8 +75,14 @@ const Footer = () => {
         <div className="right">
           <h2>subscribe</h2>
           <p>Get the latest news from us!</p>
-          <input placeholder="Email *" type="text" />
-          <button>subscribe</button>
+          <input
+            placeholder="Email *"
+            type="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button onClick={handleSubscription}>subscribe</button>
           <p className="info">
             * By clicking on Subscribe, you agree to receive our newsletter,
             which will include promotional and informational materials.

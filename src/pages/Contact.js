@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiLocationOn, CiClock2 } from "react-icons/ci";
 import { AiOutlinePhone } from "react-icons/ai";
 import contact from '../assets/images/contact.png'
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phoneNumber: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:8000/contact-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+      console.log(data); // Handle the response (e.g. show a success message)
+    } catch (error) {
+      console.error("There was an error sending the form:", error);
+    }
+  };
+
   return (
     <section className="contact">
       <div className="section-one" style={{ backgroundImage: `url(${contact})` }}>
@@ -45,26 +77,39 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              {/* <div className="item">
-                <span>
-                  <CiClock2 />
-                </span>
-                <div className="text">
-                  <h2>hours</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
+          {/* FORM */}
           <div className="right">
-            <form>
-              <input type="text" placeholder="Your Name*" />
-              <input type="number" placeholder="Phone Number*" />
-              <input type="email" placeholder="Email*" />
-              <textarea name="" placeholder="Your message"></textarea>
-              <button>SEND</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Your Name*"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <input
+                type="number"
+                placeholder="Phone Number*"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                placeholder="Email*"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <textarea
+                placeholder="Your message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+              <button type="submit">SEND</button>
             </form>
           </div>
         </div>
