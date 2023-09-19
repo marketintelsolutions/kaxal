@@ -19,6 +19,10 @@
         // border: 2px solid red;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+          }
     }
 
     & .section-two, .section-three{
@@ -37,5 +41,9 @@
         height: 500px;
         width: 1px;
         background: black;
+
+        @media (max-width: $breakpoint-tablet) {
+            display: none;
+          }
     }
 }
