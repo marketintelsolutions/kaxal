@@ -54,46 +54,61 @@ const News = () => {
                     </div>
                 </div>
             </div>
-            <div className="section-two">
-                <h2>- LATEST -</h2>
-                <Timeline
-                    dataSource={{
-                        sourceType: 'profile',
-                        screenName: 'igee_17' // Replace with the Twitter handle of the profile you want to display
-                    }}
-                    options={{
-                        height: '400', // You can customize the height as needed
-                        width: '100%'
-                    }}
-                />
-            </div>
-            <div className="section-three">
-                <button onClick={handleLogin}>Login with Facebook</button>
-                <div>
-                    {posts.map(post => (
-                        <iframe
-                            key={post.id}
-                            src={`https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/post/${post.id}`}
-                            width="500"
-                            height="600"
-                            style={{ border: 'none', overflow: 'hidden' }}
-                            scrolling="no"
-                            frameborder="0"
-                            allowfullscreen="true"
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                        ></iframe>
-                    ))}
+            <h2>- LATEST -</h2>
+            <div className='content'>
+                <div className="section-two">
+                    <Timeline
+                        dataSource={{
+                            sourceType: 'profile',
+                            screenName: 'igee_17' // Replace with the Twitter handle of the profile you want to display
+                        }}
+                        options={{
+                            height: '400', // You can customize the height as needed
+                            width: '100%'
+                        }}
+                    />
                 </div>
-            </div>
-            <div>
-                <h3>User Posts</h3>
-                <ul>
-                    {posts.map(post => (
-                        <li key={post.id}>
-                            {post.message}
-                        </li>
-                    ))}
-                </ul>
+                <div className='line'></div>
+                {/* <div className="section-three">
+                    <button onClick={handleLogin}>Login with Facebook</button>
+                    <div>
+                        {posts.map(post => (
+                            <iframe
+                                key={post.id}
+                                src={`https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/post/${post.id}`}
+                                width="500"
+                                height="600"
+                                style={{ border: 'none', overflow: 'hidden' }}
+                                scrolling="no"
+                                frameborder="0"
+                                allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            ></iframe>
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <h3>User Posts</h3>
+                    <ul>
+                        {posts.map(post => (
+                            <li key={post.id}>
+                                {post.message}
+                            </li>
+                        ))}
+                    </ul>
+                </div> */}
+                <div className="section-three">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAuthorDGRPage&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=322593000299324"
+                        width="340"
+                        height="500"
+                        style={{ border: 'none', overflow: 'hidden' }}
+                        scrolling="no"
+                        frameBorder="0"
+                        allowFullScreen={true}
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
             </div>
         </section>
     )
