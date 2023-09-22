@@ -26,13 +26,16 @@
     }
 
     & .section-two, .section-three{
-        // border: 2px solid red;
+        // border: 2px solid blue;
         width: 60%;
         margin: 0 auto;
         max-width: 900px;
         gap: 30px;
         padding-top: 50px;
         margin-bottom: 80px;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
 
         
     }
@@ -40,7 +43,7 @@
     & .line{
         height: 500px;
         width: 1px;
-        background: black;
+        background: rgb(148, 141, 141);
 
         @media (max-width: $breakpoint-tablet) {
             display: none;
