@@ -70,7 +70,7 @@ const News = () => {
                     <TwitterTimelineEmbed
                         sourceType="profile"
                         screenName="igee_17"  // Replace with the username of the desired profile (without the '@')
-                        options={{ height: 400, width: '100%' }}  // Adjust height or other options as needed
+                        options={{ height: 400, width: 440 }}  // Adjust height or other options as needed
                     />
                 </div>
                 <div className='line'></div>
@@ -104,10 +104,10 @@ const News = () => {
                 </div> */}
                 <div className="section-three">
                     <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAuthorDGRPage&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=322593000299324"
-                        width="340"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAuthorDGRPage&tabs=timeline&width=440&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=322593000299324"
+                        width="440"
                         height="400"
-                        style={{ border: 'none', overflow: 'hidden' }}
+                        style={{ border: 'none' }}
                         scrolling="no"
                         frameBorder="0"
                         allowFullScreen={true}
