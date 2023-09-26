@@ -3,45 +3,45 @@ import { Link } from 'react-router-dom';
 import news from '../assets/images/news.png'
 import { Timeline } from 'react-twitter-widgets';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
-import { fetchPosts, initFacebookSdk } from '../facebook';
+// import { fetchPosts, initFacebookSdk } from '../facebook';
 
 const News = () => {
     // const [posts, setPosts] = useState([]);
 
-    const handleLogin = () => {
-        window.FB.login(function (response) {
-            if (response.authResponse) {
-                fetchUserPosts();
-            } else {
-                console.log('User cancelled login or did not fully authorize.');
-            }
-        }, { scope: 'user_posts' });
-    }
+    // const handleLogin = () => {
+    //     window.FB.login(function (response) {
+    //         if (response.authResponse) {
+    //             fetchUserPosts();
+    //         } else {
+    //             console.log('User cancelled login or did not fully authorize.');
+    //         }
+    //     }, { scope: 'user_posts' });
+    // }
 
-    const fetchUserPosts = () => {
-        window.FB.api('/me/posts', function (response) {
-            if (response && !response.error) {
-                setPosts(response.data);
-            }
-        });
-    }
+    // const fetchUserPosts = () => {
+    //     window.FB.api('/me/posts', function (response) {
+    //         if (response && !response.error) {
+    //             setPosts(response.data);
+    //         }
+    //     });
+    // }
 
     // =================================================
     const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
-        async function loadPosts() {
-            try {
-                await initFacebookSdk();
-                const data = await fetchPosts();
-                setPosts(data);
-            } catch (error) {
-                console.error("Error fetching posts:", error);
-            }
-        }
+    // useEffect(() => {
+    //     async function loadPosts() {
+    //         try {
+    //             await initFacebookSdk();
+    //             const data = await fetchPosts();
+    //             setPosts(data);
+    //         } catch (error) {
+    //             console.error("Error fetching posts:", error);
+    //         }
+    //     }
 
-        loadPosts();
-    }, []);
+    //     loadPosts();
+    // }, []);
 
     return (
         <section className='news'>
@@ -57,7 +57,7 @@ const News = () => {
             <h2>- LATEST -</h2>
             <div className='content'>
                 <div className="section-two">
-                    <Timeline
+                    {/* <Timeline
                         dataSource={{
                             sourceType: 'profile',
                             screenName: 'igee_17' // Replace with the Twitter handle of the profile you want to display
@@ -66,6 +66,11 @@ const News = () => {
                             height: '400', // You can customize the height as needed
                             width: '100%'
                         }}
+                    /> */}
+                    <TwitterTimelineEmbed
+                        sourceType="profile"
+                        screenName="igee_17"  // Replace with the username of the desired profile (without the '@')
+                        options={{ height: 400, width: '100%' }}  // Adjust height or other options as needed
                     />
                 </div>
                 <div className='line'></div>

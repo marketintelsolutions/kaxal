@@ -33,7 +33,7 @@
         gap: 30px;
         padding-top: 50px;
         margin-bottom: 80px;
-        display: flex;
+        // display: flex;
         // justify-content: center;
         // align-items: center;
 
@@ -43,7 +43,7 @@
     & .line{
         height: 500px;
         width: 1px;
-        background: rgb(148, 141, 141);
+        background: rgb(235, 233, 233);
 
         @media (max-width: $breakpoint-tablet) {
             display: none;
