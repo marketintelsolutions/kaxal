@@ -60,7 +60,7 @@ const News = () => {
                     {/* <Timeline
                         dataSource={{
                             sourceType: 'profile',
-                            screenName: 'igee_17' // Replace with the Twitter handle of the profile you want to display
+                            screenName: 'KaxalAfrica' // Replace with the Twitter handle of the profile you want to display
                         }}
                         options={{
                             height: '400', // You can customize the height as needed
@@ -69,7 +69,7 @@ const News = () => {
                     /> */}
                     <TwitterTimelineEmbed
                         sourceType="profile"
-                        screenName="igee_17"  // Replace with the username of the desired profile (without the '@')
+                        screenName="KaxalAfrica"  // Replace with the username of the desired profile (without the '@')
                         options={{ height: 400, width: 440 }}  // Adjust height or other options as needed
                     />
                 </div>
