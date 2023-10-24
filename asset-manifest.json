@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/kaxal/static/css/main.ab716946.css",
+    "main.js": "/kaxal/static/js/main.2da9b4c5.js",
+    "static/media/webzen.png": "/kaxal/static/media/webzen.d5a7c5b427bb48201e38.png",
+    "static/media/hawaree.png": "/kaxal/static/media/hawaree.ed0469ba8ab906f62c7c.png",
+    "static/media/sinaAlimi.png": "/kaxal/static/media/sinaAlimi.43184e59abb557d66aca.png",
+    "static/media/aboutus.png": "/kaxal/static/media/aboutus.c8b88f7222095643c248.png",
+    "static/media/ericOkoruwa.png": "/kaxal/static/media/ericOkoruwa.0ca33ce0eeb99e495f4a.png",
+    "static/media/topeAdewuya.png": "/kaxal/static/media/topeAdewuya.df6c31820357fe83b73c.png",
+    "static/media/services.png": "/kaxal/static/media/services.3cd9004997ab1eb577f0.png",
+    "static/media/business.png": "/kaxal/static/media/business.2b13fb3d4c52feb9a54a.png",
+    "static/media/shopping.png": "/kaxal/static/media/shopping.3a7880722935c8cc96d8.png",
+    "static/media/agriBusiness.png": "/kaxal/static/media/agriBusiness.704090c251b025c63426.png",
+    "static/media/others.png": "/kaxal/static/media/others.1c430ee60a7fae8c59da.png",
+    "static/media/contact.png": "/kaxal/static/media/contact.2d38de075ac14688a5d3.png",
+    "static/media/digital.png": "/kaxal/static/media/digital.8f1bf686a1f77ad93a1c.png",
+    "static/media/products.png": "/kaxal/static/media/products.e4e74506e1ac7bf6bc50.png",
+    "static/media/financial.png": "/kaxal/static/media/financial.88bad0cc1d426f5588fd.png",
+    "static/media/logistics.png": "/kaxal/static/media/logistics.4a3aba04611a3abf27c0.png",
+    "static/media/news.png": "/kaxal/static/media/news.c9c3a490c4ee1e72c59b.png",
+    "static/media/chrisOshiafi.png": "/kaxal/static/media/chrisOshiafi.c0bf3538fdcbbd6e4529.png",
+    "static/media/webzenT.png": "/kaxal/static/media/webzenT.0dc925757f6f197039a3.png",
+    "static/media/footerBg.svg": "/kaxal/static/media/footerBg.b4bb5ddf703ac6b70a3392790add5558.svg",
+    "static/media/instagram.svg": "/kaxal/static/media/instagram.3e4dc6f42ec9ccb55412c228635d1d9e.svg",
+    "static/media/close.svg": "/kaxal/static/media/close.6a10d3a8467f0e350b5e6f77342991a7.svg",
+    "index.html": "/kaxal/index.html",
+    "static/media/twitter.svg": "/kaxal/static/media/twitter.386d875fc0e1fb4898ca816892b5b2a0.svg",
+    "static/media/youtube.svg": "/kaxal/static/media/youtube.fb8740befcbfc43fcc80457e420b1915.svg",
+    "static/media/facebook.svg": "/kaxal/static/media/facebook.bba1e620805b2c0677569fced0b25e64.svg",
+    "main.ab716946.css.map": "/kaxal/static/css/main.ab716946.css.map",
+    "main.2da9b4c5.js.map": "/kaxal/static/js/main.2da9b4c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab716946.css",
+    "static/js/main.2da9b4c5.js"
+  ]
+}
