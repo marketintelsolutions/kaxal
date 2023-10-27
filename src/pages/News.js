@@ -104,7 +104,7 @@ const News = () => {
                 </div> */}
                 <div className="section-three">
                     <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAuthorDGRPage&tabs=timeline&width=440&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=322593000299324"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087465067889&tabs=timeline&width=700&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                         width="440"
                         height="400"
                         style={{ border: 'none' }}
