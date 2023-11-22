@@ -5,14 +5,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import News from "./pages/News";
-import { initFacebookSdk } from "./facebook";
 import { useEffect } from "react";
 
 function App() {
-
-  useEffect(() => {
-    initFacebookSdk();
-  }, []);
 
   return (
     <>
