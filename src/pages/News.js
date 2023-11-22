@@ -60,7 +60,7 @@ const News = () => {
                     {/* <Timeline
                         dataSource={{
                             sourceType: 'profile',
-                            screenName: 'igee_17' // Replace with the Twitter handle of the profile you want to display
+                            screenName: 'KaxalAfrica' // Replace with the Twitter handle of the profile you want to display
                         }}
                         options={{
                             height: '400', // You can customize the height as needed
@@ -69,7 +69,7 @@ const News = () => {
                     /> */}
                     <TwitterTimelineEmbed
                         sourceType="profile"
-                        screenName="igee_17"  // Replace with the username of the desired profile (without the '@')
+                        screenName="KaxalAfrica"  // Replace with the username of the desired profile (without the '@')
                         options={{ height: 400, width: 440 }}  // Adjust height or other options as needed
                     />
                 </div>
@@ -104,7 +104,7 @@ const News = () => {
                 </div> */}
                 <div className="section-three">
                     <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAuthorDGRPage&tabs=timeline&width=440&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=322593000299324"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087465067889&tabs=timeline&width=700&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                         width="440"
                         height="400"
                         style={{ border: 'none' }}

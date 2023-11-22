@@ -52,9 +52,9 @@ const Footer = () => {
             <img src={logo} alt="logo" />
           </div>
           <p>
-            Hawaree Africa is our e-commerce and consumer goods distribution
-            arm. We work with several international and domestic companies
-            across a variety of consumer categories.
+          Kaxal Africa Limited is a member of the Pan African Capital Holdings Group. Kaxal Africa is a parent company to two sub – companies
+          (Webzen Agro Allied Services Limited and Hawaree Africa Limited.)
+
           </p>
           <div className="socials">
             <a href="https://www.instagram.com/kaxalafrica/" target='_blank'><img src={instagram} alt="instagram" /></a>
