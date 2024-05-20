@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/logos/logo.jpeg";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
-import youtube from "../assets/images/youtube.svg";
 import footerBg from "../assets/images/footerBg.svg";
+import wave from "../assets/images/wave.svg";
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { Link } from "react-router-dom";
 import axios from 'axios';
@@ -45,15 +45,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer" style={{ backgroundImage: `url(${footerBg})` }}>
+    <footer className="footer" style={{ backgroundImage: `url(${wave})` }}>
       <div className="footer-center">
         <div className="left">
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
           <p>
-          Kaxal Africa Limited is a member of the Pan African Capital Holdings Group. Kaxal Africa is a parent company to two sub – companies
-          (Webzen Agro Allied Services Limited and Hawaree Africa Limited.)
+            Kaxal Africa Limited is a member of the Pan African Capital Holdings Group. Kaxal Africa is a parent company to two sub – companies
+            (Webzen Agro Allied Services Limited and Hawaree Africa Limited.)
 
           </p>
           <div className="socials">
@@ -71,6 +71,12 @@ const Footer = () => {
           <Link to='/services' className="link-item">services</Link>
           <Link to='/news' className="link-item">news</Link>
           <Link to='/contact' className="link-item">contact</Link>
+        </div>
+        <div className="right">
+          <h2>Contact</h2>
+          <p>+2348078095798</p>
+          <p>contact@kaxalafrica.com</p>
+          <p>Plot 8A, Elsie Femi-Pearse, <br /> Off Adeola Odeku, Victoria Island</p>
         </div>
         <div className="right">
           <h2>subscribe</h2>

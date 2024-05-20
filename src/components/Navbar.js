@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/logos/logo.jpeg";
 import hamburger from "../assets/logos/hamburger.png";
 import { paths } from "../utils/data";
 

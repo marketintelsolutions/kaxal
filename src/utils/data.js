@@ -62,16 +62,16 @@ export const teamData = [
 
 
 export const values = [
-  {
-    heading: 'Our Vision',
-    text: 'To make sustainable investments, across the African continent, in the agribusiness and consumer goods distribution sectors.',
-    img: vision
-  },
-  {
-    heading: 'Our Mission',
-    text: 'Leveraging market knowledge and technology to drive value for our stakeholders.',
-    img: mission
-  },
+  // {
+  //   heading: 'Our Vision',
+  //   text: 'To make sustainable investments, across the African continent, in the agribusiness and consumer goods distribution sectors.',
+  //   img: vision
+  // },
+  // {
+  //   heading: 'Our Mission',
+  //   text: 'Leveraging market knowledge and technology to drive value for our stakeholders.',
+  //   img: mission
+  // },
   {
     heading: 'Tagline',
     text: '“… beyond limits”',

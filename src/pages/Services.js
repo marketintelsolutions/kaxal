@@ -35,6 +35,7 @@ const Services = () => {
 
                         </div>
                     </div>
+                    <Link to='/contact' className='learn-more'>Learn more</Link>
 
                     <div className="webzen hawaree">
                         <h1>Hawaree Africa</h1>
@@ -49,6 +50,8 @@ const Services = () => {
 
                         </div>
                     </div>
+                    <Link to='/contact' className='learn-more hawaree-btn'>Learn more</Link>
+
                 </div>
             </div>
         </div>
