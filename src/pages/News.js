@@ -54,7 +54,8 @@ const News = () => {
                     </div>
                 </div>
             </div>
-            <h2>- LATEST -</h2>
+            {/* <h2>- LATEST -</h2> */}
+            <h2>Get latest news and update from our social platforms</h2>
             <div className='content'>
                 <div className="section-two">
 

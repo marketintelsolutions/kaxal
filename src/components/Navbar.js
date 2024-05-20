@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to='/'> <img src={logo} alt="logo" /></Link>
         </div>
 
         {/* Hamburger Button */}

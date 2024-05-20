@@ -6,6 +6,7 @@ import { limitStringTo50Characters } from "../utils/helpers/arrangeText";
 import aboutus from '../assets/images/aboutus.png'
 import { hawareelogo, webzenlogo } from "../assets/logos";
 import vision from '../assets/images/vision.png'
+import mission from '../assets/images/mission.png'
 import visionbg from '../assets/images/visionbg.png'
 import tagline from '../assets/images/tagline.png'
 import core from '../assets/images/core.png'
@@ -102,7 +103,7 @@ const About = () => {
               </p>
             </div>
             <div className="statement-item hawaree-statement">
-              <img src={vision} alt="vision" />
+              <img src={mission} alt="vision" />
               <h2><span>Our</span> Mission</h2>
               <p>Leveraging market knowledge and technology to drive
                 value for our stakeholders.
@@ -112,12 +113,12 @@ const About = () => {
 
           <div className="bottom">
             <div className="statement-item">
-              <img src={vision} alt="vision" />
+              <img src={tagline} alt="vision" />
               <h2> Tagline</h2>
               <p>“… beyond limits”</p>
             </div>
             <div className="statement-item hawaree-statement">
-              <img src={vision} alt="vision" />
+              <img src={core} alt="vision" />
               <h2><span>Core</span> Values</h2>
               <p>SPIRIT</p>
               <div className="spirits">
