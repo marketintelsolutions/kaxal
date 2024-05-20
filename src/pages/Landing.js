@@ -6,6 +6,7 @@ import bulb from '../assets/images/bulb.png'
 import chart from '../assets/images/chart.png'
 import think from '../assets/images/think.png'
 import chain from '../assets/images/chain.png'
+import { Link } from "react-router-dom";
 
 const Landing = () => {
 
@@ -81,6 +82,7 @@ const Landing = () => {
             return <Card {...item} key={index} />;
           })}
         </div>
+        <Link className="learn-more" to='/about'>Learn More</Link>
       </div>
     </div>
   );
