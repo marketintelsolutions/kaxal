@@ -24,7 +24,7 @@ const Services = () => {
                     <h2>In actualization of our vision, we have invested in 2 companies operating in the agribusiness and consumer goods distribution space.</h2>
                     <div className="webzen">
                         <h1>Webzen Agro Allied Services Limited</h1>
-                        <p> Webzen is focused on providing financial investments and business support to the agribusiness sector.</p>
+                        <h2> Webzen is focused on providing financial investments and business support to the agribusiness sector.</h2>
                         <div className="zen-items">
                             {
                                 webzenServices.map((service, index) => {
@@ -39,7 +39,7 @@ const Services = () => {
 
                     <div className="webzen hawaree">
                         <h1>Hawaree Africa</h1>
-                        <p>Hawaree.com is an e-commerce platform growing organically into a full-fledged marketplace for the distribution of consumer goods in Africa.</p>
+                        <h2>Hawaree.com is an e-commerce platform growing organically into a full-fledged marketplace for the distribution of consumer goods in Africa.</h2>
                         <div className="zen-items">
                             {
                                 hawareeServices.map((service, index) => {
