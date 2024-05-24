@@ -4,6 +4,7 @@ import banner from '../assets/images/homebanner.png'
 import banner2 from '../assets/images/banner2.png'
 import banner3 from '../assets/images/banner3.png'
 import banner4 from '../assets/images/banner4.jpg'
+import banner5 from '../assets/images/banner5.jpg'
 
 const Carouselslider = () => {
     return (
@@ -42,7 +43,7 @@ const Carouselslider = () => {
                 </div>
             </div>
             {/* item 4 */}
-            <div className="banner" style={{ backgroundImage: `url(${banner4})` }} >
+            <div className="banner" style={{ backgroundImage: `url(${banner4})`, backgroundPositionY: '-220px', backgroundRepeat: 'no-repeat' }} >
                 <div className="banner_center">
                     <h1>Dedicated to providing consumer goods with a
                         customer-centric focus</h1>
