@@ -62,14 +62,14 @@ const News = () => {
                     <TwitterTimelineEmbed
                         sourceType="profile"
                         screenName="KaxalAfrica"  // Replace with the username of the desired profile (without the '@')
-                        options={{ height: 400, width: 440 }}  // Adjust height or other options as needed
+                    // options={{ height: 400, width: 540 }}  // Adjust height or other options as needed
                     />
                 </div>
                 <div className='line'></div>
                 <div className="section-three">
                     <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087465067889&tabs=timeline&width=700&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                        width="440"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087465067889&tabs=timeline&width=1000&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="500"
                         height="400"
                         style={{ border: 'none' }}
                         scrolling="no"

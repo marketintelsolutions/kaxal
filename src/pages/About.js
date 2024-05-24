@@ -4,12 +4,15 @@ import { teamData, values } from "../utils/data";
 import close from "../assets/logos/close.svg";
 import { limitStringTo50Characters } from "../utils/helpers/arrangeText";
 import aboutus from '../assets/images/aboutus.png'
-import { hawareelogo, webzenlogo } from "../assets/logos";
 import vision from '../assets/images/vision.png'
 import mission from '../assets/images/mission.png'
 import visionbg from '../assets/images/visionbg.png'
 import tagline from '../assets/images/tagline.png'
 import core from '../assets/images/core.png'
+import bulb from '../assets/images/bulb.png'
+import chart from '../assets/images/chart.png'
+import think from '../assets/images/think.png'
+import chain from '../assets/images/chain.png'
 
 const coreValues = {
   heading: 'Core Values',
@@ -64,33 +67,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="box">
-          <div className="box-center">
-            <div className="box-center-item">
-              <div className="image"><img src={webzenlogo} alt="webzen logo" /></div>
-              <div className="right">
-                <div className="heading">
-                  <h2>Webzen Agro Allied Services Limited</h2>
-                </div>
-                <p>Webzen Agro Allied Services Limited provides investment <br /> and
-                  business support services to agric businesses
-                </p>
-              </div>
-            </div>
-            <span className="division"></span>
-            <div className="box-center-item">
-              <div className="image"><img src={hawareelogo} alt="webzen logo" /></div>
-              <div className="right">
-                <div className="heading hawaree-heading">
-                  <h2>Hawaree Africa Limited</h2>
-                </div>
-                <p>Hawaree Africa Limited offers consumer goods distribution and  <br />
-                  e-commerce services.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <div className="statements" style={{ backgroundImage: `url(${visionbg})` }}>
           <div className="statements-center">
@@ -151,6 +128,54 @@ const About = () => {
           }
         </div> */}
       </div>
+
+      <div className="landing_intro">
+        <h1><span>Our</span> Innovative Approach</h1>
+        <h2>
+          At Kaxal Africa, we take pride in our commitment to innovation, utilising cutting-edge strategies to
+          navigate the dynamic landscapes of agribusiness and consumer goods distribution.
+        </h2>
+
+        <div className="innovatives">
+          <div className="innovative">
+            <img src={bulb} alt="bulb" />
+            <p className="grey">
+              We leverage advanced technologies to streamline processes and enhance efficiency.
+              From precision agriculture in Webzen Agro Allied Services to state-of-the-art
+              e-commerce platforms in Hawaree Africa Limited, we integrate technology seamlessly
+              to stay ahead of industry trends.
+            </p>
+          </div>
+          <div className="innovative">
+            <img src={chart} alt="bulb" />
+            <p className="">
+              Hawaree Africa Limited is dedicated to providing consumer goods with a
+              customer-centric focus. Our e-commerce services are driven by personalised
+              experiences, intuitive interfaces, and a commitment to delivering products swiftly and
+              securely to the doorsteps of our valued customers.
+            </p>
+          </div>
+          <div className="innovative">
+            <img src={think} alt="bulb" />
+            <p className="grey">
+              Informed decisions are the cornerstone of our success. We harness the power of data
+              analytics to gain actionable insights, optimise supply chains, predict market trends, and
+              ensure that our agribusiness and consumer goods distribution services are practical and
+              adaptive to changing demands.
+            </p>
+          </div>
+          <div className="innovative">
+            <img src={chain} alt="bulb" />
+            <p className="">
+              Recognising the importance of a robust supply chain, we continuously innovate to
+              enhance its resilience. Through strategic partnerships, real-time tracking, and predictive
+              analytics, we ensure a seamless flow of products from farm to consumer, meeting
+              demand efficiently and reducing waste.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="section-three">
         <div className="center">
           <p className="desc">- Team -</p>
@@ -173,6 +198,9 @@ const About = () => {
             }
           </div>
         </div>
+
+
+
         {isContent && (
           <div className="details" onClick={(e) => handleClick(e)}>
             <div className="center">

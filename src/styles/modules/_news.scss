@@ -13,9 +13,10 @@
     display: flex;
     width: 80%;
     margin: 0 auto;
-    gap: 30px;
+    // gap: 30px;
     height: fit-content;
     // border: 2px solid red;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -26,25 +27,33 @@
 
   & .section-two,
   .section-three {
-    // border: 2px solid blue;
-    // width: 60%;
+    width: 70%;
     margin: 0 auto;
     max-width: 900px;
     gap: 30px;
-    padding-top: 50px;
+    // padding-top: 50px;
     margin-bottom: 80px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
 
-  & .line {
-    height: 500px;
-    width: 1px;
-    background: rgb(235, 233, 233);
-
-    @media (max-width: $breakpoint-tablet) {
-      display: none;
+    & .twitter-timeline {
+      width: unset;
     }
+
+    // & ._2p3a {
+    //   width: unset;
+    // }
   }
+
+  // & .line {
+  //   height: 500px;
+  //   width: 1px;
+  //   background: rgb(235, 233, 233);
+
+  //   @media (max-width: $breakpoint-tablet) {
+  //     display: none;
+  //   }
+  // }
 }
