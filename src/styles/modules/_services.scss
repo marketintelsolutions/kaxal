@@ -49,10 +49,24 @@
         font-size: 22px;
         border-radius: 8px;
         cursor: pointer;
+
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--primary-green);
+          background: white;
+          border: 1px solid var(--primary-green);
+          transition: var(--transition);
+        }
       }
 
       & .hawaree-btn {
         background-color: var(--primary-orange);
+
+        &:hover {
+          color: var(--primary-orange);
+          border: 1px solid var(--primary-orange);
+        }
       }
 
       & .webzen {

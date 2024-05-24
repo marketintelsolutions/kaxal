@@ -253,6 +253,14 @@
       text-decoration: none;
       border-radius: 6px;
       cursor: pointer;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--primary-orange);
+        background: white;
+        border: 1px solid var(--primary-orange);
+        transition: var(--transition);
+      }
     }
 
     & h1 {
@@ -441,6 +449,10 @@
             opacity: 0.9;
             transition: var(--transition);
           }
+        }
+
+        & a {
+          // background: black;
         }
       }
     }
