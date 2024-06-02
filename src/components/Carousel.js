@@ -13,7 +13,7 @@ const Carouselslider = () => {
             className="mt-8"
             autoplay
             loop
-            autoplayDelay={5000}
+            autoplayDelay={8000}
         >
             {/* item 1 */}
             <div className="banner" style={{ backgroundImage: `url(${banner})` }} >
