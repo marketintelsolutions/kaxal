@@ -4,6 +4,7 @@ import news from '../assets/images/news.png'
 import { Timeline } from 'react-twitter-widgets';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 // import { fetchPosts, initFacebookSdk } from '../facebook';
+import { FacebookEmbed } from 'react-social-media-embed';
 
 const News = () => {
     // const [posts, setPosts] = useState([]);
@@ -62,12 +63,17 @@ const News = () => {
                     <TwitterTimelineEmbed
                         sourceType="profile"
                         screenName="KaxalAfrica"  // Replace with the username of the desired profile (without the '@')
-                    // options={{ height: 400, width: 540 }}  // Adjust height or other options as needed
+                        options={{ height: 400, width: 540 }}  // Adjust height or other options as needed
                     />
                 </div>
-                <div className='line'></div>
+                {/* <div className='line'></div> */}
                 <div className="section-three">
-                    <iframe
+                    {/* <FacebookEmbed url="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0kqT7rg2WTjXdZPmSS8H533vEESYB1TAamRmxq5Cwrf1yKnW8XyV6qd6aSmdHXW3Yl%26id%3D100087465067889&show_text=true&width=500&preview=comet_preview"
+                        width={504}
+                        height={592}
+                    /> */}
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0kqT7rg2WTjXdZPmSS8H533vEESYB1TAamRmxq5Cwrf1yKnW8XyV6qd6aSmdHXW3Yl%26id%3D100087465067889&show_text=true&width=500&preview=comet_preview" style={{ border: 'none', overflow: 'hidden' }} width="500" height="600" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    {/* <iframe
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087465067889&tabs=timeline&width=1000&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                         width="500"
                         height="400"
@@ -76,7 +82,7 @@ const News = () => {
                         frameBorder="0"
                         allowFullScreen={true}
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                    </iframe>
+                    </iframe> */}
                 </div>
             </div>
         </section>

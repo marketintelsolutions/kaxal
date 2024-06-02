@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
 import { landingCards } from "../utils/data";
-import { hawareelogo, webzenlogo } from "../assets/logos";
 import { Link } from "react-router-dom";
 import Carouselslider from "../components/Carousel";
 import hero from '../assets/images/hero.jpg'
@@ -49,33 +48,7 @@ const Landing = () => {
           className="sub-heading">As a parent
           company, we oversee two subsidiaries, each vital in our mission to drive sustainable investments and
           create value for our stakeholders.</h2>
-        <div className="box">
-          <div className="box-center">
-            <div className="box-center-item">
-              <div className="image"><img src={webzenlogo} alt="webzen logo" /></div>
-              <div className="right">
-                <div className="heading">
-                  <h2>Webzen Agro Allied Services Limited</h2>
-                </div>
-                <p>Webzen Agro Allied Services Limited provides investment <br /> and
-                  business support services to agric businesses
-                </p>
-              </div>
-            </div>
-            <span className="division"></span>
-            <div className="box-center-item">
-              <div className="image"><img src={hawareelogo} alt="webzen logo" /></div>
-              <div className="right">
-                <div className="heading hawaree-heading">
-                  <h2>Hawaree Africa Limited</h2>
-                </div>
-                <p>Hawaree Africa Limited offers consumer goods distribution and  <br />
-                  e-commerce services.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
 
 

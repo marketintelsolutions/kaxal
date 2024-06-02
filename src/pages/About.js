@@ -13,6 +13,8 @@ import bulb from '../assets/images/bulb.png'
 import chart from '../assets/images/chart.png'
 import think from '../assets/images/think.png'
 import chain from '../assets/images/chain.png'
+import aboutimg from '../assets/images/aboutimg.jpg'
+import { hawareelogo, webzenlogo } from "../assets/logos";
 
 const coreValues = {
   heading: 'Core Values',
@@ -45,8 +47,12 @@ const About = () => {
       <div className="section-two">
         <div className="content">
           <div className="left">
-            <img
+            {/* <img
               src="https://res2.weblium.site/res/62c7f6e7b71ec0000d6bb66e/62d7ab44814afd000fcb870e_optimized_1187?nowebp"
+              alt="fruit image"
+            /> */}
+            <img
+              src={aboutimg}
               alt="fruit image"
             />
           </div>
@@ -66,7 +72,33 @@ const About = () => {
             {/* <Link to='/services' >services</Link> */}
           </div>
         </div>
-
+        <div className="box">
+          <div className="box-center">
+            <div className="box-center-item">
+              <div className="image"><img src={webzenlogo} alt="webzen logo" /></div>
+              <div className="right">
+                <div className="heading">
+                  <h2>Webzen Agro Allied Services Limited</h2>
+                </div>
+                <p>Webzen Agro Allied Services Limited provides investment <br /> and
+                  business support services to agric businesses
+                </p>
+              </div>
+            </div>
+            <span className="division"></span>
+            <div className="box-center-item">
+              <div className="image"><img src={hawareelogo} alt="webzen logo" /></div>
+              <div className="right">
+                <div className="heading hawaree-heading">
+                  <h2>Hawaree Africa Limited</h2>
+                </div>
+                <p>Hawaree Africa Limited offers consumer goods distribution and  <br />
+                  e-commerce services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
         <div className="statements" style={{ backgroundImage: `url(${visionbg})` }}>
