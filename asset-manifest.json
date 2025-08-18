@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2b56358.css",
-    "main.js": "/static/js/main.ac1b6752.js",
+    "main.css": "/static/css/main.61684c0f.css",
+    "main.js": "/static/js/main.3d9fcdc8.js",
     "static/media/banner2.png": "/static/media/banner2.de55ea37eb9e8a033764.png",
     "static/media/visionbg.png": "/static/media/visionbg.91578294ec8c173d167c.png",
+    "static/media/sinaAlimi.png": "/static/media/sinaAlimi.ebf2c564c463d851dbee.png",
+    "static/media/ericOkoruwa.png": "/static/media/ericOkoruwa.52e64a8cfed527f6bcd2.png",
+    "static/media/kenneth.png": "/static/media/kenneth.250013224b26c310c396.png",
     "static/media/banner3.png": "/static/media/banner3.e4bed537a80c2a10a4f9.png",
+    "static/media/chrisOshiafi.png": "/static/media/chrisOshiafi.948122206f6a330e9ac2.png",
     "static/media/aboutimg.jpg": "/static/media/aboutimg.70d1b0b3bb35b625fb5d.jpg",
     "static/media/homebanner.png": "/static/media/homebanner.46ce837bd61bbdc08262.png",
     "static/media/banner4.jpg": "/static/media/banner4.39f38b21e39ba18233c6.jpg",
     "static/media/webzen.png": "/static/media/webzen.d5a7c5b427bb48201e38.png",
     "static/media/hawaree.png": "/static/media/hawaree.ed0469ba8ab906f62c7c.png",
-    "static/media/sinaAlimi.png": "/static/media/sinaAlimi.43184e59abb557d66aca.png",
     "static/media/webzenlogo.jpeg": "/static/media/webzenlogo.1bea318e174dff93b687.jpeg",
     "static/media/aboutus.png": "/static/media/aboutus.c8b88f7222095643c248.png",
-    "static/media/ericOkoruwa.png": "/static/media/ericOkoruwa.0ca33ce0eeb99e495f4a.png",
-    "static/media/topeAdewuya.png": "/static/media/topeAdewuya.df6c31820357fe83b73c.png",
     "static/media/hawareelogo.jpeg": "/static/media/hawareelogo.64786f1ad2f9b9e21b3b.jpeg",
     "static/media/services.png": "/static/media/services.3cd9004997ab1eb577f0.png",
     "static/media/banner5.jpg": "/static/media/banner5.ac435fc1b38944ae31dc.jpg",
@@ -32,7 +33,6 @@
     "static/media/logistics.png": "/static/media/logistics.4a3aba04611a3abf27c0.png",
     "static/media/news.png": "/static/media/news.c9c3a490c4ee1e72c59b.png",
     "static/media/chart.png": "/static/media/chart.40e995962daada900dba.png",
-    "static/media/chrisOshiafi.png": "/static/media/chrisOshiafi.c0bf3538fdcbbd6e4529.png",
     "static/media/bulb.png": "/static/media/bulb.7b7321c1af84f9dc3870.png",
     "static/media/think.png": "/static/media/think.d5e11397f3a8eccb94c0.png",
     "static/media/webzenT.png": "/static/media/webzenT.0dc925757f6f197039a3.png",
@@ -43,11 +43,11 @@
     "index.html": "/index.html",
     "static/media/twitter.svg": "/static/media/twitter.386d875fc0e1fb4898ca816892b5b2a0.svg",
     "static/media/facebook.svg": "/static/media/facebook.bba1e620805b2c0677569fced0b25e64.svg",
-    "main.d2b56358.css.map": "/static/css/main.d2b56358.css.map",
-    "main.ac1b6752.js.map": "/static/js/main.ac1b6752.js.map"
+    "main.61684c0f.css.map": "/static/css/main.61684c0f.css.map",
+    "main.3d9fcdc8.js.map": "/static/js/main.3d9fcdc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2b56358.css",
-    "static/js/main.ac1b6752.js"
+    "static/css/main.61684c0f.css",
+    "static/js/main.3d9fcdc8.js"
   ]
 }
