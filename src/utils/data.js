@@ -5,7 +5,7 @@ import webzenT from "../assets/images/webzenT.png";
 import chrisOshiafi from '../assets/images/chrisOshiafi.png'
 import sinaAlimi from '../assets/images/sinaAlimi.png'
 import ericOkoruwa from '../assets/images/ericOkoruwa.png'
-import topeAdewuya from '../assets/images/topeAdewuya.png'
+import kenneth from '../assets/images/kenneth.png'
 import mission from '../assets/images/mission.png'
 import vision from '../assets/images/vision.png'
 import tagline from '../assets/images/tagline.png'
@@ -53,10 +53,10 @@ export const teamData = [
     text: ['Eric Okoruwa is the Group Executive Director of PanAfrican Capital Holdings with over 20 years’ experience in investment banking and financial advisory.', ' Eric has been involved in various high-profile transactions, raising over $5 billion and N300 billion from both foreign and local financial institution and capital markets across diverse sector. While at Fountain Trust bank Plc, he worked on a number of high-profile private sector advisory transactions as well as the Federal Government privatization program of the Federal Government of Nigeria.', ' He holds a Bachelor of Science Degree in Business Administration from the University of Lagos and a Master’s degree in Marketing from the University of Lagos. He has attended a number of Executive courses, Advanced Manager’s Programme (AMP) from the Lagos Business School, “Leading Organizational Change” - Wharton University of Pennsylvania and the Lagos Business School Global Chief Executive Officer (GCEO) programme for Africa in conjunction with Strathmore University Business School and IESE Business School Navarra, New York.', ' He also attended various international and local courses on company Valuation and Issues Pricing, Factoring, Mergers & Acquisitions, Bonds & Derivatives, Asset Backed Securities, Structured Finance and International Trade Finance.']
   },
   {
-    img: topeAdewuya,
+    img: kenneth,
     role: 'General Manager',
-    name: 'Tope Adewuya',
-    text: [' Tope joined Webzen Agro Allied Services Limited in 2020. Prior to this he worked as Investment Manager with GroFin which is a pioneering development financier specialized in financing and supporting small and growing businesses (SGBs) across Africa and the Middle East. ', ' He holds a Master’s degree in Business Administration (Finance specialization); an Associate of the Chartered Institute of Bankers of Nigeria (CIBN) and a graduate of Agricultural Economics. ', ' With over 12 years working experience in the provision of credit to SMEs; Tope specialized on agribusiness and manufacturing sector deals where he has been able to provide diligent business support to young and growing food manufacturing and agrobusinesses. These industries (manufacturing & agribusiness) supports a lot of lives at the bottom of the pyramid thereby promoting the actualization of the SDGs.']
+    name: 'KENNETH OSANEBI',
+    text: [' Kenneth Osanebi is the General Manager of Kaxal Africa Limited (a member of PanAfrican Capital Holdings group). He is an agribusiness expert and a seasoned risk manager with over 20 years of experience in the banking and finance industry. Kenneth started his banking career with Citizens International Bank Limited in 2002. He has been extensively involved in the agriculture sector over the last ten years, working in various capacities, some of which include: Head, Agric Desk (Enterprise Bank Limited); Head, Project Monitoring and Remediation Office (NIRSAL – a corporation of Central Bank of Nigeria); Chief Operating Officer, (SmartAg Solutions Limited and AgLane Nigeria Limited) and Head, Agribusiness, Natural Resources and Project Development (Heritage Bank Plc). He has been involved in the provision of monitoring and evaluation services for agricultural projects covering over 150,000 hectares across various agriculture value chains in Nigeria. He led the team that provided aggregation services across fourteen Northern states in the 2021/2022 dry season wheat cultivation covering over 70,000 hectares. He holds a Bachelors degree in Mechanical Engineering. He is a Fellow of the following institutes: Chartered Institute of Export and Commodity Brokers of Nigeria (CIECOBON), Institute of Professional Managers & Administrators of Nigeria (IPMA), and Institute of Chartered Economists of Nigeria (ICEN). He is a full member of the Renewable Energy Institute (REI), United Kingdom, and the American Society of Agricultural Consultants (ASAC).']
   },
 ]
 
