@@ -6,8 +6,6 @@ import chrisOshiafi from '../assets/images/chrisOshiafi.png'
 import sinaAlimi from '../assets/images/sinaAlimi.png'
 import ericOkoruwa from '../assets/images/ericOkoruwa.png'
 import topeAdewuya from '../assets/images/topeAdewuya.png'
-import mission from '../assets/images/mission.png'
-import vision from '../assets/images/vision.png'
 import tagline from '../assets/images/tagline.png'
 import core from '../assets/images/core.png'
 
@@ -98,10 +96,10 @@ export const paths = [
     text: 'services',
     path: '/services'
   },
-  {
-    text: 'news',
-    path: '/news'
-  },
+  // {
+  //   text: 'news',
+  //   path: '/news'
+  // },
   {
     text: 'contact',
     path: '/contact'
