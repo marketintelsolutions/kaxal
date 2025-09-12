@@ -98,10 +98,10 @@ export const paths = [
     text: 'services',
     path: '/services'
   },
-  {
-    text: 'news',
-    path: '/news'
-  },
+  // {
+  //   text: 'news',
+  //   path: '/news'
+  // },
   {
     text: 'contact',
     path: '/contact'

@@ -35,7 +35,7 @@ const Services = () => {
 
                         </div>
                     </div>
-                    <Link to='/contact' className='learn-more'>Learn more</Link>
+                    <a href='https://hawaree.com' target='_blank' className='learn-more hawaree-btn'>Learn more</a>
 
                     <div className="webzen hawaree">
                         <h1>Hawaree Africa</h1>
@@ -50,7 +50,7 @@ const Services = () => {
 
                         </div>
                     </div>
-                    <Link to='/contact' className='learn-more hawaree-btn'>Learn more</Link>
+                    <a href='https://hawaree.com' target='_blank' className='learn-more hawaree-btn'>Learn more</a>
 
                 </div>
             </div>
