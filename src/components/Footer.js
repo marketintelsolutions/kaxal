@@ -76,7 +76,7 @@ const Footer = () => {
           <h2>Contact</h2>
           <p>+2348078095798</p>
           <p>contact@kaxalafrica.com</p>
-          <p>Plot 8A, Elsie Femi-Pearse, <br /> Off Adeola Odeku, Victoria Island</p>
+          <p>Plot 8A, Elsie Femi-Pearse, <br /> Off Adeola Odeku, Victoria Island.</p>
         </div>
         <div className="right">
           <h2>subscribe</h2>

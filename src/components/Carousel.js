@@ -49,7 +49,7 @@ const Carouselslider = () => {
                         customer-centric focus</h1>
                     <p>Our e-commerce services are driven by personalised
                         experiences, intuitive interfaces, and a commitment to delivering products swiftly and
-                        securely to the doorsteps of our valued customers</p>
+                        securely to the doorsteps of our valued customers.</p>
                 </div>
             </div>
         </Carousel>
