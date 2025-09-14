@@ -35,7 +35,7 @@ const Services = () => {
 
                         </div>
                     </div>
-                    <a href='https://hawaree.com' target='_blank' className='learn-more hawaree-btn'>Learn more</a>
+                    <a href='https://webzenagroallied.com' target='_blank' className='learn-more webzen-btn'>Learn more</a>
 
                     <div className="webzen hawaree">
                         <h1>Hawaree Africa</h1>
