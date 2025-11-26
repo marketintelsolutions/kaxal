@@ -2,7 +2,7 @@ import hawaree from "../assets/images/hawaree.png";
 import webzen from "../assets/images/webzen.png";
 import hawareeT from "../assets/images/hawareeT.png";
 import webzenT from "../assets/images/webzenT.png";
-import chrisOshiafi from '../assets/images/chrisOshiafi.png'
+import chris from '../assets/images/chris.png'
 import sinaAlimi from '../assets/images/sinaAlimi.png'
 import ericOkoruwa from '../assets/images/ericOkoruwa.png'
 import kenneth from '../assets/images/kenneth.png'
@@ -35,7 +35,7 @@ export const landingCards = [
 
 export const teamData = [
   {
-    img: chrisOshiafi,
+    img: chris,
     name: 'Chris Oshiafi',
     role: 'Chairman',
     text: ['Chris Oshiafi is the Group Chief Executive Officer of PanAfrican Capital Holdings with experience that spans over two decades in Structured Finance, Consulting, Investment Banking and Venture Capital/Private Equity.', ' He was the Pioneer Managing Director/CEO of Truebond Investments & Capital Limited, a Company with diverse interests in Oil & Gas, Telecommunications, Power and the Capital Markets. He has also worked with the firm of Damitop Consulting Limited as Managing Partner where he worked on a number of World Bank projects for the Federal and several State Governments. He served as Executive Director (Investment Banking) of Citizens International Bank (now Enterprise Bank Limited) until his appointment as the pioneer Chief Executive Officer of PanAfrican Capital Holdings Limited.', ' Chris holds a Bachelor of Science degree in Accounting & Finance from the University of London and Master’s degree in Business Administration degree from the University of Lagos. Chris is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), an Associate of the Chartered Insurance Institute of London, (ACII) UK and Chartered Institute of Taxation of Nigeria (ACIT). He also attended various programs at the prestigious Columbia Business School, New York, United States and INSEAD Business School, Fontainebleau, France, the IESE Business School in Barcelona, Spain and the Chief Executive Programme (CEP 17) Class of the Lagos Business School.'],
