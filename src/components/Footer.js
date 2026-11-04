@@ -95,6 +95,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <p className="text-center text-lg pt-4">A subsidary PanAfrican Capital Holding Company</p>
     </footer>
   );
 };

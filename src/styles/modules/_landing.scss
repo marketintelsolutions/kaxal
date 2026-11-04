@@ -23,38 +23,76 @@
 
     &::before {
       position: absolute;
+      inset: 0;
       content: "";
-      height: 100%;
-      width: 100%;
-      background: rgba(73, 69, 69, 0.4);
+      // Darken the left side for legibility, let the image breathe on the right
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.3) 45%,
+        rgba(0, 0, 0, 0.05) 100%
+      );
     }
 
+    // Full-width layout container, aligned with the rest of the page
     &_center {
+      width: 100%;
       max-width: var(--max-width);
       margin: 0 auto;
+      padding: 0 40px;
       z-index: 1;
       position: relative;
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      color: black;
-      background-color: #ffffff77;
-      padding: 40px;
+      justify-content: flex-start;
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 0 20px;
+        justify-content: center;
+      }
+    }
+
+    // The content card itself: constrained width, left-aligned
+    &_card {
+      max-width: 600px;
+      padding: 40px 44px;
+      color: #1a1a1a;
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-left: 5px solid var(--primary-orange);
+      border-radius: 6px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 28px 24px;
+      }
 
       & h1 {
-        max-width: 65%;
-        font-size: 45px;
-        margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 20px;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
+
+        @media (max-width: $breakpoint-large) {
+          font-size: 34px;
+        }
+
+        @media (max-width: $breakpoint-small) {
+          font-size: 26px;
+        }
       }
 
       & p {
-        font-size: 20px;
-        max-width: 65%;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0.5px;
+        line-height: 1.65;
+        letter-spacing: 0.3px;
+        color: #3a3a3a;
+
+        @media (max-width: $breakpoint-small) {
+          font-size: 16px;
+        }
       }
     }
   }
