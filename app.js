@@ -14,6 +14,9 @@ app.use((req, res, next) => {
 });
 // app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.send('hello there')
+});
 app.post('/send-email', subscribers);
 
 app.post('/contact-form', contact);
