@@ -8,44 +8,37 @@ import wave from "../assets/images/wave.svg";
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import Modal from "./Modal";
 
 const Footer = () => {
   const [email, setEmail] = React.useState('');
 
+  const [modal, setModal] = React.useState({ open: false, status: "success" });
+
   const handleSubscription = async () => {
     try {
-      // const response = await fetch('http://localhost:5000/send-email', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //     "Access-Control-Allow-Origin": "*"
-      //   },
-      //   body: JSON.stringify({ email }),
-      // });
-
-      axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`, {
-        email,
-      }
-      )
-        .then(() => alert("Message Sent successfully"))
-        .catch((err) => {
-          console.log(err);
-
-          alert("Ooops...failed");
-        })
-
-      // if (response.status === 200) {
-      //   console.log('Email sent successfully');
-      // } else {
-      //   console.log('Error sending email');
-      // }
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`, { email });
+      setEmail('');
+      setModal({ open: true, status: "success" });
     } catch (error) {
       console.error("There was an error sending the email", error);
+      setModal({ open: true, status: "error" });
     }
   };
 
   return (
     <footer className="footer" style={{ backgroundImage: `url(${wave})` }}>
+      <Modal
+        open={modal.open}
+        status={modal.status}
+        title={modal.status === "success" ? "Subscribed!" : "Subscription failed"}
+        message={
+          modal.status === "success"
+            ? "Thanks for subscribing. You'll hear from us soon."
+            : "We couldn't complete your subscription. Please try again later."
+        }
+        onClose={() => setModal((m) => ({ ...m, open: false }))}
+      />
       <div className="footer-center">
         <div className="left">
           <div className="logo">
