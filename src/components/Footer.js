@@ -23,7 +23,7 @@ const Footer = () => {
       //   body: JSON.stringify({ email }),
       // });
 
-      axios.post('http://localhost:8000/send-email', {
+      axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`, {
         email,
       }
       )
