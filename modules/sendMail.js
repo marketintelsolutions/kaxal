@@ -15,7 +15,7 @@ const subscribers = async (req, res) => {
 
     let mailOptions = {
         from: 'mail.pacholdings@gmail.com',
-        to: `${recipientEmail}, igbagboleye2@gmail.com`,
+        to: `${recipientEmail}`,
         subject: 'Thanks for Subscribing!',
         text: 'You have successfully subscribed to our newsletter.'
     };
