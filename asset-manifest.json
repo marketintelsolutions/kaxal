@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e540879.css",
-    "main.js": "/static/js/main.d05ee992.js",
+    "main.css": "/static/css/main.f8993404.css",
+    "main.js": "/static/js/main.e556540f.js",
     "static/media/banner2.png": "/static/media/banner2.de55ea37eb9e8a033764.png",
     "static/media/visionbg.png": "/static/media/visionbg.91578294ec8c173d167c.png",
     "static/media/sinaAlimi.png": "/static/media/sinaAlimi.ebf2c564c463d851dbee.png",
@@ -40,14 +40,14 @@
     "static/media/wave.svg": "/static/media/wave.b8a2b986079c06fa70ef4c23af2b0a29.svg",
     "static/media/instagram.svg": "/static/media/instagram.3e4dc6f42ec9ccb55412c228635d1d9e.svg",
     "static/media/close.svg": "/static/media/close.6a10d3a8467f0e350b5e6f77342991a7.svg",
-    "index.html": "/index.html",
     "static/media/twitter.svg": "/static/media/twitter.386d875fc0e1fb4898ca816892b5b2a0.svg",
+    "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.bba1e620805b2c0677569fced0b25e64.svg",
-    "main.0e540879.css.map": "/static/css/main.0e540879.css.map",
-    "main.d05ee992.js.map": "/static/js/main.d05ee992.js.map"
+    "main.f8993404.css.map": "/static/css/main.f8993404.css.map",
+    "main.e556540f.js.map": "/static/js/main.e556540f.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e540879.css",
-    "static/js/main.d05ee992.js"
+    "static/css/main.f8993404.css",
+    "static/js/main.e556540f.js"
   ]
 }
