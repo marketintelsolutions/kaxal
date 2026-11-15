@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 import { CiLocationOn, CiClock2 } from "react-icons/ci";
 import { AiOutlinePhone } from "react-icons/ai";
 import contact from '../assets/images/contact.png'
+import Modal from "../components/Modal";
+
+const initialForm = {
+  name: "",
+  phoneNumber: "",
+  email: "",
+  message: ""
+};
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phoneNumber: "",
-    email: "",
-    message: ""
-  });
+  const [formData, setFormData] = useState(initialForm);
+  const [submitting, setSubmitting] = useState(false);
+  const [modal, setModal] = useState({ open: false, status: "success" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +27,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
 
     try {
       const response = await fetch(`${process.env.REACT_APP_BASE_URL}/contact-form`, {
@@ -30,15 +36,31 @@ const Contact = () => {
         body: JSON.stringify(formData)
       });
 
-      const data = await response.json();
-      console.log(data); // Handle the response (e.g. show a success message)
+      if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+
+      setFormData(initialForm);
+      setModal({ open: true, status: "success" });
     } catch (error) {
       console.error("There was an error sending the form:", error);
+      setModal({ open: true, status: "error" });
+    } finally {
+      setSubmitting(false);
     }
   };
 
   return (
     <section className="contact">
+      <Modal
+        open={modal.open}
+        status={modal.status}
+        title={modal.status === "success" ? "Message sent" : "Something went wrong"}
+        message={
+          modal.status === "success"
+            ? "Thank you for reaching out. We'll get back to you shortly."
+            : "We couldn't send your message. Please try again later."
+        }
+        onClose={() => setModal((m) => ({ ...m, open: false }))}
+      />
       <div className="section-one" style={{ backgroundImage: `url(${contact})` }}>
         <div className="section-center">
           <h2>contacts</h2>
@@ -109,7 +131,9 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit">SEND</button>
+              <button type="submit" disabled={submitting}>
+                {submitting ? "SENDING..." : "SEND"}
+              </button>
             </form>
           </div>
         </div>
